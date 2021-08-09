@@ -1,9 +1,13 @@
 const { version } = require('mongoose');
 const mongoose = require('mongoose')
 
-const wordSchema = new mongoose.Schema(
+const vocabSchema = new mongoose.Schema(
 	{
 		pronunciation: {
+			type: String,
+			required: true,
+		},
+		word: {
 			type: String,
 			required: true,
 		},
@@ -15,7 +19,7 @@ const wordSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        comfort_level: {
+        comfortLevel: {
             type: Number,
             required: true,
             min: [1, 'That is okay! You can only go up from here!'],
@@ -33,4 +37,4 @@ const wordSchema = new mongoose.Schema(
 	}
 )
 
-module.exports = mongoose.model('Word', wordSchema)
+module.exports = mongoose.model('Vocab', vocabSchema)

@@ -1,5 +1,5 @@
 API="http://localhost:4741"
-URL_PATH="/words"
+URL_PATH="/vocabs"
 
 curl "${API}${URL_PATH}/${ID}" \
   --include \

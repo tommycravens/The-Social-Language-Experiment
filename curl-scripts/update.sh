@@ -1,16 +1,18 @@
-API="http://localhost4741"
-URL_PATH:"/words"
+API="http://localhost:4741"
+URL_PATH="/vocabs"
 
-curl "" \
+curl "${API}${URL_PATH}/${ID}" \
   --include \
   --request PATCH \
   --header "Content-Type: application/json" \
+  --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "word": {
+    "vocab": {
+      "word": "'"${WORD}"'",
       "definition": "'"${DEFINITION}"'",
       "sentence": "'"${SENTENCE}"'",
       "pronunciation": "'"${PRONUNCIATION}"'",
-      "comfort_level": "'"${COMFORT LEVEL}
+      "comfortLevel": "'"${COMFORT_LEVEL}"'"
     }
   }'
 
