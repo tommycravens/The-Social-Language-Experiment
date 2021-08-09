@@ -19,7 +19,7 @@ const wordSchema = new mongoose.Schema(
             type: Number,
             required: true,
             min: [1, 'That is okay! You can only go up from here!'],
-            max: [5, 'Outstanding! You must be ready to delete this card from your set.']
+            max: [5, 'Outstanding! You must be ready to delete this card from your set!']
 
         },
 		owner: {
