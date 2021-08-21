@@ -36,7 +36,7 @@ router.post('/vocabs', requireToken, (req, res, next) => {
 
 	// save event to mongodb
 	Vocab.create(vocab)
-		// if successful respond with 201 and event json
+		// if successful respond with 201 and vocab json
 		.then((vocab) => res.status(201).json({ vocab: vocab.toObject() }))
 		// on error respond with 500 and error message
 		.catch(next)
