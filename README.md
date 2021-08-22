@@ -6,4 +6,5 @@ This application is version 1.0 of my language learning app, The Social Language
 <h2>Deployed link: https://tommycravens.github.io/The-Social-Language-Experiment-client/
 
 <h2>Entity Relationship Diagram: </h2>
+
 ![ERD](https://media.git.generalassemb.ly/user/37194/files/4e70f200-034e-11ec-9b9d-e03ece5bfca4)
